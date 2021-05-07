@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/*Nested Rules*/
+/*Cách viết phân cấp. Phân cấp thuộc tính cụ thể*/
+div.container {
+  /*Định dạng div.container*/
+  /*background-color: green;*/
+}
+div.container div.child {
+  /*Định dạng div.child*/
+  /*background-color: yellow;*/
+}
+div.container div.child a {
+  /*Định dạng thẻ a*/
+  color: red;
+  font-size: 32px;
+  font-weight: bold;
+}
+div.container p {
+  color: blue;
+  border-bottom: solid 1px red;
+}
+div.container p.content {
+  padding: 20px;
+  margin: 20px;
+  /*Đối với các thuộc tính có tiền tố đầu giống nhau như border(border-top,border-bottom,border-left,border-right)*/
+  /*Hay font(font-family,font-size,font-weight)*/
+  /*border-top: solid 3px blue;*/
+  /*border-bottom: solid 3px green;*/
+  /*border-left: solid 3px red;*/
+  /*border-right: solid 3px yellow;*/
+  border-top: solid 3px blue;
+  border-bottom: solid 3px green;
+  border-left: solid 3px red;
+  border-right: solid 3px yellow;
+}
+
+/*# sourceMappingURL=output.css.map */

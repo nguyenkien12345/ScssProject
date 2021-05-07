@@ -1,0 +1,32 @@
+// SassScript: Variables
+// Cú pháp: $name:value
+// Tái sử dụng
+// Giảm thiểu việc lặp code -> Tiết kiệm thời gian
+// Phạm vi: Toàn cục và cục bộ
+// Cú pháp khai báo toàn cục: !global
+$primary_color: #7B1FA2;
+$text-large-size: 32px;
+
+h3{
+	color:$primary_color;
+}
+
+p.content{
+	// $text_color: yellow; 
+	// Đây là biến cục bộ chỉ dùng được trong hàm. Thêm !global để chuyển thành biến toàn cục
+	$text_color: yellow !global; 
+	padding: 10px;
+	color: white;
+	background-color: $primary_color;
+	a{
+		font:{
+			size:$text-large-size;
+		}
+		color:$text_color;
+	}
+}
+
+span{
+	border-bottom: solid 1px $primary_color;
+	color: $text_color;
+}

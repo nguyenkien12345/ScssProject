@@ -1,0 +1,11 @@
+// Interpolation: Lấy giá trị các biến lưu trữ. Áp dụng: selectors và tên thuộc tính css
+// Cú pháp #{tên biến}
+//Chỗ nào có tên class là content thì sẽ được thay thế bằng #{$name}
+//Chỗ nào có thuộc tính background thì sẽ được thay thế bằng #{$attr_bg}
+
+$name: content;
+$attr_bg: background;
+
+div.#{$name}{
+	#{$attr_bg}-color:red;
+}

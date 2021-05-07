@@ -1,0 +1,13 @@
+.border{
+	border-radius: 10px 5px;
+	-moz-border-radius: 10px 5px;
+	-webkit-border-radius: 10px 5px;
+	-o-border-radius: 10px 5px;
+}
+
+.main{
+	width: 500px;
+	height: 200px;
+	@extend .border;
+	// kế thừa các thuộc tính của class border
+}

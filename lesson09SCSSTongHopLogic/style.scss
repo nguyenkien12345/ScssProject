@@ -1,0 +1,41 @@
+//Sass - @if
+$dieukien: mauxam;
+.main{
+	@if($dieukien==maudo){
+		background: red;
+	}
+	@else if($dieukien==mauden){
+		background: black;
+	}
+	@else if($dieukien==mauvang){
+		background: yellow;
+	}
+	@else{
+		background: gray;
+	}
+}
+
+// Sass - @for
+@for $i from 1 through 3{
+	.item-#{$i}{
+		width: #{$i}em;
+	}
+}
+
+// Sass - @each
+@each $var, $color in (item1,red), (item2,yellow), (item3,blue){
+	.#{$var}{
+		background:url("/image/#{$var}.png");
+		color:$color;
+	}
+}
+
+// Sass - @while
+$n:1;
+@while ($n < 5){
+	.item#{$n}{
+		width: 12px * $n;
+		height: 6px * $n;
+	}
+	$n: $n + 1;
+}

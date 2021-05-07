@@ -1,0 +1,21 @@
+// mixin giống như là hàm trong lập trình
+// border-rd là biến ta tự đặt tên
+@mixin border-rd($bien1, $bien2){
+	border-radius: $bien1 $bien2;
+	-moz-border-radius: $bien1 $bien2;
+	-webkit-border-radius: $bien1 $bien2;
+	-o-border-radius: $bien1 $bien2;
+}
+
+.main1 {
+	width: 500px;
+	height: 200px;
+	@include border-rd(10px, 0px);
+}
+
+.main2 {
+	width: 500px;
+	height: 200px;
+	@include border-rd(10px, 5px);
+}
+

@@ -1,0 +1,33 @@
+// $primary_color: red;
+// $size:32px;
+
+// h1{
+// 	color:$primary_color;
+// }
+
+// p{
+// 	font:{
+// 		size:$size;
+// 	}
+// }
+
+// $background-url : "../images/";
+
+// div.bg{
+// 	background-url: $background-url + "div-bg.png";
+// }
+
+// p.bg{
+// 	background-url: $background-url + "p-bg.png";
+// }
+
+$color : #4286f4;
+$light-color: lighten($color, 15%); //Tăng độ sáng lên 15%
+$dark-color: darken($color, 85%); //Tăng độ tối lên 85%
+$plus-color: green + blue; //Kết hợp các mã màu với nhau
+
+h1,p {
+	padding: 10px;
+	color: yellow;
+	background-color: $plus-color;
+}

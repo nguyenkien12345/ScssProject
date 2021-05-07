@@ -1,0 +1,41 @@
+div.container button {
+  background-color: red;
+  color: yellow;
+  border: none;
+  font-weight: bold;
+  border-radius: 2px;
+  padding: 10px 20px;
+  margin: 10px;
+}
+div.container button:hover, div.container button:focus, div.container button:active {
+  background-color: gray;
+  color: white;
+}
+div.container h1.container-title {
+  color: blue;
+  border: solid 1px green;
+}
+div.container #content {
+  width: 200px;
+  height: 120px;
+  margin: 10px;
+  background-color: blue;
+  color: yellow;
+}
+div.container #content-left {
+  width: 70px;
+  height: 50px;
+  padding: 10px;
+  margin: 10px;
+  background-color: gray;
+}
+div.container #content-right {
+  width: 70px;
+  height: 50px;
+  padding: 10px;
+  margin-top: 80px;
+  margin: 10px;
+  background-color: green;
+}
+
+/*# sourceMappingURL=output.css.map */

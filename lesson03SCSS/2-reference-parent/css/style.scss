@@ -1,0 +1,50 @@
+// Cú pháp: & giúp tham chiếu tới phần tử cha
+div.container{
+	button{
+		background-color: red;
+		color: yellow;
+		border: none;
+		font-weight: bold;
+		border-radius: 2px;
+		padding: 10px 20px;
+		margin: 10px;
+		// button:hover{
+		// background-color:gray;
+		// color: white;
+		// }
+		// & là gọi đến thằng cha mà thằng cha của nó là thằng gần nhất là button
+		&:hover, &:focus, &:active{
+			background-color:gray;
+			color: white;
+		}
+	}
+	h1.container-title{
+		color:blue;
+		border:solid 1px green;
+	}
+	#content{
+		width: 200px;
+		height:120px;
+		margin:10px;
+		background-color:blue;
+		color:yellow;
+		// & <=> #content
+		// &-left <=> #content-left
+		&-left{
+			width: 70px;
+			height: 50px;
+			padding: 10px;
+			margin: 10px;
+			background-color: gray;
+		}
+		// &-right <=> #content-right
+		&-right{
+			width: 70px;
+			height: 50px;
+			padding: 10px;
+			margin-top: 80px;
+			margin: 10px;
+			background-color: green;
+		}
+	}
+}

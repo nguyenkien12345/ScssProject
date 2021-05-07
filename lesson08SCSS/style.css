@@ -1,0 +1,13 @@
+.main {
+  border-radius: 10px 5px;
+  -moz-border-radius: 10px 5px;
+  -webkit-border-radius: 10px 5px;
+  -o-border-radius: 10px 5px;
+}
+
+.main {
+  width: 500px;
+  height: 200px;
+}
+
+/*# sourceMappingURL=style.css.map */

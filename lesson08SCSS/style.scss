@@ -1,0 +1,15 @@
+// Placeholder selector
+// Cú pháp vùng chọn: %name
+%border{
+	border-radius: 10px 5px;
+	-moz-border-radius: 10px 5px;
+	-webkit-border-radius: 10px 5px;
+	-o-border-radius: 10px 5px;
+}
+
+.main{
+	width: 500px;
+	height: 200px;
+	@extend %border;
+	//Lấy toàn bộ thuộc tính của vùng chọn có name là border
+}
